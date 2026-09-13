@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Performance Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="dashboard-header">
+    <div class="dashboard-header__inner">
+      <p class="dashboard-header__eyebrow">ITP10 · Event-Driven Programming</p>
+      <h1>Student Performance Dashboard</h1>
+
+      <section class="controls" aria-label="Search and filter controls">
+        <div class="field">
+          <label for="searchInput">Search by name</label>
+          <input type="text" id="searchInput" placeholder="Enter student name" />
+        </div>
+
+        <div class="field">
+          <label for="blockFilter">Block</label>
+          <select id="blockFilter">
+            <option value="All">All</option>
+            <option value="31-ITE-01">31-ITE-01</option>
+            <option value="31-ITE-02">31-ITE-02</option>
+            <option value="31-ITE-03">31-ITE-03</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="statusFilter">Academic status</label>
+          <select id="statusFilter">
+            <option value="All">All</option>
+            <option value="Excellent">Excellent</option>
+            <option value="Passed">Passed</option>
+            <option value="Needs Improvement">Needs Improvement</option>
+            <option value="Failed">Failed</option>
+          </select>
+        </div>
+
+        <div class="controls__actions">
+          <button type="button" id="applyBtn">Apply Filters</button>
+          <button type="button" id="resetBtn">Reset</button>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <section class="summary" aria-label="Class summary">
+      <div class="summary__item">
+        <span class="summary__label">Class Average</span>
+        <span class="summary__value" id="classAverage">0.00</span>
+      </div>
+      <div class="summary__item">
+        <span class="summary__label">Passing Students</span>
+        <span class="summary__value" id="passingCount">0</span>
+      </div>
+      <div class="summary__item">
+        <span class="summary__label">Displayed</span>
+        <span class="summary__value" id="displayedCount">0</span>
+      </div>
+      <div class="summary__item">
+        <span class="summary__label">Top Student</span>
+        <span class="summary__value" id="topStudent">—</span>
+      </div>
+    </section>
+
+    <div id="messageArea" role="status"></div>
+
+    <section id="studentList" aria-label="Student records"></section>
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
