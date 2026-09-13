@@ -4,7 +4,7 @@
   --navy: #204d34;
   --navy-deep: #133223;
   --teal: #3f8a5c;
-  --gold: #a9ca5c;
+  --gold: #72ca5c;
   --line: #d6ddce;
   --card: #ffffff;
   --excellent: #2f6d47;
@@ -45,14 +45,6 @@ body {
 .dashboard-header__inner {
   max-width: 960px;
   margin: 0 auto;
-}
-
-.dashboard-header__eyebrow {
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  letter-spacing: 0.04em;
-  color: var(--gold);
-  margin: 0 0 0.35rem;
 }
 
 .dashboard-header h1 {
